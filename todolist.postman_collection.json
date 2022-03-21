@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "a6fba0bd-2395-423e-b05e-384969b514cb",
+		"name": "todolist",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://intense-fortress-59028.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"intense-fortress-59028",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\":\"1233456678\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://intense-fortress-59028.herokuapp.com/todos/1752fa0b-aa57-4e35-8fd5-99980361e383",
+					"protocol": "https",
+					"host": [
+						"intense-fortress-59028",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"1752fa0b-aa57-4e35-8fd5-99980361e383"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://intense-fortress-59028.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"intense-fortress-59028",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\":\"33333\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://intense-fortress-59028.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"intense-fortress-59028",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://intense-fortress-59028.herokuapp.com/todos/1752fa0b-aa57-4e35-8fd5-99980361e383",
+					"protocol": "https",
+					"host": [
+						"intense-fortress-59028",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"1752fa0b-aa57-4e35-8fd5-99980361e383"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "localUrl",
+			"value": "http://localhost",
+			"type": "string"
+		}
+	]
+}
